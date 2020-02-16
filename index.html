@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.62.2" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', '');
+</script>
+
+
+<title>Vintage Audio</title>
+<link rel="icon" type="img/png" href="img/favi.png">
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="css/main.css"/>
+
+<link rel="stylesheet" href="css/rad-icons.css"/>
+
+<link rel="stylesheet" href="css/custom.css"/>
+
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="">
+        <span>Vintage Audio</span>
+        
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#brands"
+              >BRANDS</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#shipping"
+              >SHIPPING</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="img/Vintage/G9000/G9000x2.png"
+      data-srcset="img/Vintage/G9000/G9000x2.png 1x, img/Vintage/G9000/G9000.png 2x"
+      alt="Sansui G9000"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          
+          <span
+            >Experienced Vintage Audio Repair</span
+          >
+        </h1>
+        <p class="lead">
+          We can service many of the top vintage audio systems, such as Marantz, McIntosh, and others
+        </p>
+        
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="img/Vintage/G9000/G9000mobile.png"
+      alt="Sansui G9000"
+    />
+  </div>
+</section>
+
+
+
+	
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="img/Vintage/BeogramTX/bgtx.png"
+          data-srcset="img/Vintage/BeogramTX/bgtx.png 1x, img/Vintage/BeogramTX/bgtxx2.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Who are we?</h2>
+        <p class="lead">
+          <p class="lead"> Since 1980, we have been servicing top home audio brands both in and out of warranty. If you have a vintage piece of gear from the 70s or 80s, chances are we have been working on it and other pieces like it since it was new! </p> <p class="lead"> Receivers, Turntables, Reel to Reel players, and more can be given new life for many more years of enjoyment. </p> <p class="lead"> Since we have been the regional, factory authorized service center for many years, we have access to parts, service manuals, and training like no other. Our skill and experience means we diagnose and repair equipment down to the component level. </p>
+        </p>
+        
+          <i class=""></i>
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+	
+<section id="brands" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Brands
+    </h2>
+    <div class="row row--padded rad-animation-group rad-fade-down">
+      <div class="col-12">
+        <div class="clients">
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/marantz.png"
+                data-srcset="img/Brand%20Logos/40px/marantz.png 1x, img/Brand%20Logos/80px/marantz.png 2x"
+                alt="Marantz"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/bang.png"
+                data-srcset="img/Brand%20Logos/40px/bang.png 1x, img/Brand%20Logos/80px/bang.png 2x"
+                alt="Bang &amp; Olufsen"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/mcintosh.png"
+                data-srcset="img/Brand%20Logos/40px/mcintosh.png 1x, img/Brand%20Logos/80px/mcintosh.png 2x"
+                alt="McIntosh"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/carver40.png"
+                data-srcset="img/Brand%20Logos/40px/carver40.png 1x, img/Brand%20Logos/80px/carver80.png 2x"
+                alt="Pioneer"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/pioneer.png"
+                data-srcset="img/Brand%20Logos/40px/pioneer.png 1x, img/Brand%20Logos/80px/pioneer.png 2x"
+                alt="Pioneer"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/yamaha.png"
+                data-srcset="img/Brand%20Logos/40px/yamaha.png 1x, img/Brand%20Logos/80px/yamaha.png 2x"
+                alt="Yamaha"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/sony.png"
+                data-srcset="img/Brand%20Logos/40px/sony.png 1x, img/Brand%20Logos/80px/sony.png 2x"
+                alt="Sony"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/nakamichi.png"
+                data-srcset="img/Brand%20Logos/40px/nakamichi.png 1x, img/Brand%20Logos/80px/nakamichi.png 2x"
+                alt="Nakamichi"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/akai.png"
+                data-srcset="img/Brand%20Logos/40px/akai.png 1x, img/Brand%20Logos/80px/akai.png 2x"
+                alt="Akai"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/sansui.png"
+                data-srcset="img/Brand%20Logos/40px/sansui.png 1x, img/Brand%20Logos/80px/sansui.png 2x"
+                alt="Sansui"
+              />
+          </div>
+          
+          <div class="clients__item">
+            
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                data-src="img/Brand%20Logos/40px/teac.png"
+                data-srcset="img/Brand%20Logos/40px/teac.png 1x, img/Brand%20Logos/80px/teac.png 2x"
+                alt="Teac"
+              />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+  
+<section class="section rad-animation-group pb-0" id="shipping">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="img/Vintage/2270/2270.png"
+          data-srcset="img/Vintage/2270/2270.png 1x, img/Vintage/2270/2270x2.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>Shipping</h2>
+        <p class="lead">
+          <p class = "lead"> Not in the Austin area? Use our <a href="http://pyramid-audio.com/customer.html">shipping form</a> and send it in! </p> <p class = "lead"> Please take care when boxing and packing your equipment. Ground shipping is rough. Give us a call if you&#39;d like any advice on packing. </p>
+        </p>
+          <i class=""></i>
+          
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                  <iframe width="500" height="415"
+                          frameborder="0" scrolling="no"
+                          marginheight="0" marginwidth="0"
+                          src="http://maps.google.com/maps?oe=&amp;ie=UTF8&amp;q=305+e+braker+lane,+austin,+tx,+78753&amp;fb=1&amp;gl=us&amp;hnear=College+Station,+TX+77840&amp;cid=0,0,904237463614885368&amp;ei=cGL9TPnsEYa8lQeLysicBQ&amp;oi=local_result&amp;ved=0CBQQnwIwAA&amp;ll=30.377948,-97.679744&amp;spn=0.012847,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed">
+                  </iframe>
+                    
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4>Phone Number</h4>
+                    
+                    <span><a href="tel:+15124588292">(512) 458-8292</a></span>
+                    <h4>Email</h4>
+                    <span><a href="mailto:tech@pyramid-audio.com">tech@pyramid-audio.com</a></span>
+                    <h4>Address</h4>
+                    <span>305 E Braker Lane<br />Austin, TX 78753</span>
+                    <h4>Hours</h4>
+                    <span>10-6 Weekdays<br> 10-2 Saturdays<br> Closed Sundays</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">BRANDS</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">SHIPPING</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="">CONTACT</a>
+        </li>
+        
+      </ul>
+    
+</footer>
+
+
+  <script src='js/rad-animations.js'></script>
+<script src='js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='js/library/bootstrap.min.js'></script>
+<script src='js/sticky-header.js'></script>
+<script src='js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+
+</body>
+
+</html>
+
